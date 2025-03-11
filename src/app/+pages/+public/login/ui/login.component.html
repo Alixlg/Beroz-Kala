@@ -20,22 +20,29 @@
     <a routerLink="">برگشت</a>
   </div>
 
+  @if (loginVisible) {
   <div class="login">
     <form action="">
+
       <div class="username">
         <label for="username">نام کاربری</label>
         <input [(ngModel)]="username" name="username" type="text" placeholder="نام کاربری خود را وارد کنید">
       </div>
+
       <div class="password">
         <label for="password">رمز عبور</label>
         <input [(ngModel)]="password" (keypress.Enter)="login()" name="password" type="password"
           placeholder="رمز عبور خود را وارد کنید">
       </div>
+
+      <a (click)="loginVisible =! loginVisible">حساب ندارید؟ ثبت نام کنید</a>
+
       @if(username.length >= 2){
       <div class="button">
         <button (click)="login()" [disabled]="password.length < 8">ورود</button>
       </div>
       }
+
       @if (error != "") {
       <div [class.error]="!isLogin" [class.successLogin]="isLogin">
         <p>{{error}}</p>
@@ -43,4 +50,41 @@
       }
     </form>
   </div>
+  }
+
+  @if (!loginVisible) {
+  <div class="login">
+    <form action="">
+
+      <div class="username">
+        <label for="username">نام کاربری</label>
+        <input [(ngModel)]="username" name="username" type="text" placeholder="نام کاربری خود را وارد کنید">
+      </div>
+
+      <div class="password">
+        <label for="password">کلمه عبور</label>
+        <input [(ngModel)]="password" name="password" type="password" placeholder="رمز عبور خود را وارد کنید">
+      </div>
+
+      <div class="password">
+        <label for="email">ایمیل یا شماره موبایل</label>
+        <input [(ngModel)]="email" (keypress.Enter)="singUp()" name="email" type="text"
+          placeholder="ایمیل یا شماره موبایل خود را وارد کنید">
+      </div>
+
+      <a (click)="loginVisible =! loginVisible">حساب دارید؟ وارد شوید</a>
+
+      <div class="button">
+        <button (click)="singUp()" [disabled]="username.length < 2||password.length < 8 || email.length < 2">ثبت
+          نام</button>
+      </div>
+
+      @if (error != "") {
+      <div [class.error]="!isLogin" [class.successLogin]="isLogin">
+        <p>{{error}}</p>
+      </div>
+      }
+    </form>
+  </div>
+  }
 </div>

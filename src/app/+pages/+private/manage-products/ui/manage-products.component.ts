@@ -31,11 +31,14 @@ export class ManageProductsComponent {
   addProduct() {
     if (!this.productBrand || !this.productTitle || !this.productPrice || !this.productPic) {
       this.alert = 'لطفاً تمام فیلدها را پر کنید';
+      setTimeout(() => { this.alert = '' }, 2200);
+
       return;
     }
     if (isNaN(Number(this.productPrice))) {
-      this.alert = 'لطفاً برای قیمت عدد وارد کنید';
       this.productPrice = '';
+      this.alert = 'لطفاً برای قیمت عدد وارد کنید';
+      setTimeout(() => { this.alert = '' }, 2200);
       return;
     }
 
@@ -49,21 +52,25 @@ export class ManageProductsComponent {
     this.productPrice = '';
     this.productPic = '';
     this.alert = 'محصول شما با موفقیت ثبت شد';
+    setTimeout(() => { this.alert = '' }, 2200);
   }
 
   delProduct(product: Product) {
     this.productsObj.products = this.productsObj.products.filter(p => p.id != product.id);
     this.basketObj.basket = this.basketObj.basket.filter(p => p.id != product.id);
     this.alert = 'محصول شما با موفقیت حذف شد';
+    setTimeout(() => { this.alert = '' }, 2200);
   }
 
   searchProduct() {
     if (this.searchId == '') {
       this.alert = 'لطفا شناسه را وارد کنید';
+      setTimeout(() => { this.alert = '' }, 2200);
       return;
     }
     if (isNaN(Number(this.searchId))) {
       this.alert = 'شناسه نامعتبر میباشد';
+      setTimeout(() => { this.alert = '' }, 2200);
       this.searchId = '';
       return;
     }
@@ -75,10 +82,13 @@ export class ManageProductsComponent {
       this.searchProductVisible = false;
       this.editProductVisible = true;
       this.alert = 'محصول با موفقیت یافت شد';
+      setTimeout(() => { this.alert = '' }, 2200);
     }
     else {
-      this.alert = 'محصول مورد نظر یافت نشد لطفا شناسه صحیح وارد کنید';
       this.searchId = '';
+      this.alert = 'محصول مورد نظر یافت نشد لطفا شناسه صحیح وارد کنید';
+      setTimeout(() => { this.alert = '' }, 2200);
+
       return;
     }
   }
@@ -87,11 +97,15 @@ export class ManageProductsComponent {
     if (this.searchedProduct) {
       if (!this.productBrand || !this.productTitle || !this.productPrice || !this.productPic) {
         this.alert = 'لطفاً تمام فیلدها را پر کنید';
+        setTimeout(() => { this.alert = '' }, 2200);
+
         return;
       }
       if (isNaN(Number(this.productPrice))) {
-        this.alert = 'لطفاً برای قیمت عدد وارد کنید';
         this.productPrice = '';
+        this.alert = 'لطفاً برای قیمت عدد وارد کنید';
+        setTimeout(() => { this.alert = '' }, 2200);
+
         return;
       }
 
@@ -109,9 +123,11 @@ export class ManageProductsComponent {
       this.productPrice = '';
       this.productPic = '';
       this.alert = 'محصول شما با موفقیت ویرایش شد';
+      setTimeout(() => { this.alert = '' }, 2200);
     }
     else {
       this.alert = 'محصول مورد نظر یافت نشد لطفا شناسه را وارد کنید';
+      setTimeout(() => { this.alert = '' }, 2200);
     }
     this.editProductVisible = false;
   }

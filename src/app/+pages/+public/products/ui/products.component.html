@@ -1,6 +1,6 @@
 <div class="titel">محصولات</div>
 <div class="sortBy">
-  <button (click)="sortMenuVisible =! sortMenuVisible">فیلتر بر اساس</button>
+  <button (mouseenter)="sortMenuVisible =! sortMenuVisible">فیلتر بر اساس</button>
   @if (sortMenuVisible) {
   <ul>
     <li><button (click)="this.sortByThing = 'price-up'; sortMenuVisible = false">قیمت (زیاد به کم)</button></li>

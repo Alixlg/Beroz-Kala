@@ -47,4 +47,10 @@ export class ProductsComponent {
       default: return this.productsObj.products;
     }
   }
+
+  // ngOnInit() {
+  //   for (let index = 0; index < 30; index++) {
+  //     this.productsObj.products.push(new Product('test', 'test', '900000', 'test'));
+  //   }
+  // }
 }
