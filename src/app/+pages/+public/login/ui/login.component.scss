@@ -1,0 +1,161 @@
+.dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121b18;
+}
+
+.back {
+  transition: all 0.5s;
+}
+
+.back:hover {
+  transform: scale(1.06);
+}
+
+.light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6e6e6;
+
+  .login {
+    filter: drop-shadow(0 0 6em rgb(46, 46, 46));
+  }
+}
+
+.login {
+  background-color: #121b18;
+  border-radius: 0.4em;
+  width: 25em;
+  filter: drop-shadow(0 0 10em #a5ffe1);
+
+  label {
+    color: white;
+    font-size: 1.4em;
+    margin: 0.5em;
+  }
+
+  input {
+    transition: all 0.5s;
+    padding: 0.2em 0.5em 0.2em 9.5em;
+    margin: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    filter: drop-shadow(0 0 40px rgb(124, 124, 124));
+  }
+
+  form {
+    margin: 1em;
+  }
+
+  button {
+    padding: 0.2em 5em 0.2em 5em;
+    margin: 1em;
+    margin-top: 2em;
+    border-radius: 0.4em;
+    background: #08F39F;
+    color: #121b18;
+    border: none;
+    transition: all 0.5s;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .username {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .password {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .error {
+    background-color: rgba(255, 88, 88, 0.227);
+    text-align: center;
+    margin: auto;
+    padding: 0.3em 0 0.3em 0;
+    height: 4em;
+    border-radius: 1em;
+    width: 20em;
+    color: white;
+    font-size: 0.9em;
+  }
+
+  .successLogin {
+    background-color: rgba(91, 255, 88, 0.227);
+    text-align: center;
+    margin: auto;
+    padding: 0.3em 0 0.3em 0;
+    height: 4em;
+    border-radius: 1em;
+    width: 20em;
+    color: white;
+    font-size: 0.9em;
+  }
+
+  button:not([disabled]):hover {
+    color: white;
+    background-color: #2b8969;
+    transform: scale(1.1);
+  }
+
+  button:disabled {
+    background-color: #454545;
+  }
+
+  input:hover {
+    background-color: rgb(221, 221, 221);
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.darkMode {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+
+  a {
+    filter: drop-shadow(0 0 0.8em white);
+  }
+}
+
+.darkBack {
+  position: absolute;
+  top: 1.2em;
+  right: 0.8em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+  padding: 0.35em 1.8em;
+
+  a {
+    text-decoration: none;
+    color: rgb(45, 45, 45);
+  }
+}
+
+.lightBack {
+  position: absolute;
+  top: 1.2em;
+  right: 0.8em;
+  border-radius: 0.5em;
+  padding: 0.35em 1.8em;
+  background-color: rgb(45, 45, 45);
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+}

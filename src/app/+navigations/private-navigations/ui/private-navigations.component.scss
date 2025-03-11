@@ -1,0 +1,41 @@
+ul {
+  display: flex;
+  background-color: rgb(20, 123, 89);
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0;
+  justify-content: center;
+
+  .adminPanel {
+    color: rgb(15, 15, 15);
+    filter: drop-shadow(0 0 3px white);
+  }
+
+  .adminPanel:hover {
+    transform: scale(1);
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  li {
+    margin: 0.5em;
+    transition: all 0.8s;
+  }
+
+  span {
+    display: flex;
+    flex: 1 1 0;
+  }
+
+  a:hover {
+    color: rgb(64, 64, 64);
+  }
+
+  li:hover {
+    transition: all 0.8s;
+    transform: scale(1.1);
+  }
+}

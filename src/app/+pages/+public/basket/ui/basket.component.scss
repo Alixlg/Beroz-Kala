@@ -1,0 +1,20 @@
+.basket {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  margin: 0.5em;
+
+  .emptyBasket {
+    padding: 1.5em;
+    margin: 0.3em;
+    border-radius: 0.7em;
+    background-color: rgb(248, 164, 164);
+  }
+}
+
+.titel {
+  text-align: center;
+  padding: 0.3em;
+  font-size: x-large;
+  background-color: yellow;
+}

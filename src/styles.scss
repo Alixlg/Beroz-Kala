@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Vazir;
+  src: url('/fonts/VAZIR.TTF');
+}
+
+* {
+  margin: 0;
+  font-family: Vazir;
+}
+
+button {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

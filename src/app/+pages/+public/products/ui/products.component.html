@@ -1,0 +1,21 @@
+<div class="titel">محصولات</div>
+<div class="sortBy">
+  <button (click)="sortMenuVisible =! sortMenuVisible">فیلتر بر اساس</button>
+  @if (sortMenuVisible) {
+  <ul>
+    <li><button (click)="this.sortByThing = 'price-up'; sortMenuVisible = false">قیمت (زیاد به کم)</button></li>
+    <li><button (click)="this.sortByThing = 'price-down'; sortMenuVisible = false">قیمت (کم به زیاد)</button></li>
+    <li><button (click)="this.sortByThing = 'new-products'; sortMenuVisible = false">محصولات جدید</button></li>
+    <li><button (click)="this.sortByThing = 'old-products'; sortMenuVisible = false">محصولات قدیمی</button></li>
+  </ul>
+  }
+</div>
+<div class="products">
+  @for (item of sortBy(); track $index) {
+  <app-product (onBuy)="buy($event)" [product]="item"></app-product>
+  }@empty {
+  <div class="empty">
+    هیچ محصولی وجود ندارد
+  </div>
+  }
+</div>

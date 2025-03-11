@@ -1,0 +1,106 @@
+:host {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  border-radius: 0.3em;
+}
+
+.form {
+  border: solid 0.1em gray;
+  width: 34em;
+  margin: 1em;
+  padding: 0.5em;
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 1em;
+      border: none;
+      padding: 1em;
+    }
+  }
+
+  .addProductForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      direction: rtl;
+      width: 25em;
+      margin: 0.5em;
+      padding: 0.5em;
+    }
+
+    button {
+      border: none;
+      padding: 0.6em;
+      margin: 0.3em;
+      background-color: rgb(210, 255, 142);
+    }
+  }
+
+  .delProductsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      border: none;
+      padding: 0.4em;
+      margin: 0.3em;
+      background-color: rgb(255, 139, 139);
+    }
+
+    .empty {
+      padding: 1em;
+      margin: 0.3em;
+      border-radius: 0.7em;
+      background-color: rgb(248, 164, 164);
+    }
+  }
+
+  .editProductsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      direction: rtl;
+      width: 20em;
+      margin: 0.5em;
+      padding: 0.5em;
+    }
+
+    button {
+      border: none;
+      padding: 0.6em;
+      margin: 0.3em;
+      background-color: rgb(216, 255, 77);
+    }
+
+    position: relative;
+
+    img {
+      filter: drop-shadow(0 0 8px gray);
+      position: absolute;
+      left: 1em;
+      bottom: 6em;
+      max-width: 6em;
+      max-height: 6em;
+    }
+  }
+}
+
+.alert {
+  padding: 1.2em;
+  margin: 1em;
+  border-radius: 0.4em;
+  background-color: yellow;
+  color: black;
+}

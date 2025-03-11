@@ -1,0 +1,26 @@
+<div class="product">
+  <div class="pic">
+    <img [src]="product.pic" alt="">
+  </div>
+  <div class="info">
+    <div class="text">
+      <span>{{product.title}} ({{product.brand}})
+        @if (isBasket) {
+        {{product.count}}x
+        }
+      </span>
+      <!-- har bar ke taghiri dar safhe ijad shavad in func ejra mishavad (render dobare)! -->
+      <span>{{countPriceUpdater()| number}}</span>
+    </div>
+    @if (!isBasket) {
+    <button (click)="onBuy.emit(product)">
+      افزودن به سبد خرید
+    </button>
+    }
+    @else {
+    <button (click)="onRemove.emit(product)">
+      حذف از سبد خرید
+    </button>
+    }
+  </div>
+</div>

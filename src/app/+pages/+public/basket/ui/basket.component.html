@@ -1,0 +1,11 @@
+<div class="titel">سبد خرید</div>
+<div class="basket">
+  @for (item of basketProductsObj.basket; track $index) {
+  <app-product (onRemove)="remove($event)" [product]="item" [isBasket]="true"></app-product>
+  }@empty {
+  <div class="emptyBasket">
+    شما هیچ محصولی در سبد خود اضافه نکردید
+  </div>
+  }
+
+</div>
