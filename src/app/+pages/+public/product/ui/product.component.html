@@ -1,6 +1,10 @@
 <div class="product">
   <div class="pic">
+    @defer () {
     <img [src]="product.pic" alt="">
+    }@placeholder {
+    <img src="/svgs/loading.svg" alt="">
+    }
   </div>
   <div class="info">
     <div class="text">

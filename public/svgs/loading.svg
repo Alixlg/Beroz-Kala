@@ -1,0 +1,401 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="223" height="223" style="shape-rendering: auto; display: block; background: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g transform="rotate(0 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3721804511278196s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(3.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.36842105263157904s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(7.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3646616541353384s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(10.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.36090225563909784s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(14.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3571428571428572s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(18 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.35338345864661663s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(21.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.349624060150376s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(25.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.34586466165413543s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(28.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3421052631578948s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(32.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3383458646616542s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(36 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3345864661654136s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(39.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.330827067669173s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(43.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3270676691729324s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(46.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3233082706766918s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(50.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3195488721804512s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(54 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3157894736842106s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(57.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.31203007518797s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(61.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.30827067669172936s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(64.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.3045112781954888s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(68.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.30075187969924816s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(72 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.2969924812030076s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(75.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.29323308270676696s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(79.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.2894736842105264s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(82.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.28571428571428575s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(86.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.2819548872180452s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(90 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.27819548872180455s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(93.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.274436090225564s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(97.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.27067669172932335s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(100.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.2669172932330828s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(104.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.26315789473684215s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(108 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.2593984962406016s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(111.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.25563909774436094s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(115.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.25187969924812037s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(118.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.24812030075187974s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(122.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.24436090225563914s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(126 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.24060150375939854s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(129.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.23684210526315794s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(133.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.23308270676691734s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(136.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.22932330827067673s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(140.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.22556390977443613s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(144 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.22180451127819553s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(147.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.21804511278195493s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(151.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.21428571428571433s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(154.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.21052631578947373s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(158.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.20676691729323313s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(162 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.20300751879699253s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(165.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.19924812030075192s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(169.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.19548872180451132s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(172.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.19172932330827072s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(176.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.18796992481203012s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(180 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.18421052631578952s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(183.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.18045112781954892s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(187.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.17669172932330832s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(190.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.17293233082706772s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(194.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.1691729323308271s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(198 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.1654135338345865s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(201.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.1616541353383459s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(205.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.1578947368421053s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(208.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.15413533834586468s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(212.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.15037593984962408s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(216 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.14661654135338348s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(219.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.14285714285714288s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(223.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.13909774436090228s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(226.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.13533834586466167s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(230.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.13157894736842107s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(234 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.12781954887218047s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(237.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.12406015037593987s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(241.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.12030075187969927s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(244.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.11654135338345867s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(248.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.11278195488721807s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(252 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.10902255639097747s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(255.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.10526315789473686s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(259.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.10150375939849626s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(262.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.09774436090225566s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(266.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.09398496240601506s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(270 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.09022556390977446s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(273.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.08646616541353386s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(277.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.08270676691729326s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(280.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.07894736842105265s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(284.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.07518796992481204s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(288 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.07142857142857144s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(291.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.06766917293233084s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(295.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.06390977443609024s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(298.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.060150375939849635s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(302.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.05639097744360903s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(306 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.05263157894736843s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(309.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.04887218045112783s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(313.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.04511278195488723s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(316.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.04135338345864663s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(320.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.03759398496240602s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(324 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.03383458646616542s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(327.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.030075187969924817s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(331.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.026315789473684216s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(334.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.022556390977443615s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(338.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.01879699248120301s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(342 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.015037593984962409s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(345.6 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.011278195488721807s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(349.2 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.007518796992481204s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(352.8 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="-0.003759398496240602s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g transform="rotate(356.4 50 50)">
+  <rect fill="#000000" height="5" width="3" ry="2.5" rx="1.5" y="29.5" x="48.5">
+    <animate repeatCount="indefinite" begin="0s" dur="0.3759398496240602s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+  </rect>
+</g><g></g></g><!-- [ldio] generated by https://loading.io --></svg>

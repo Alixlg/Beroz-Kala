@@ -50,7 +50,7 @@ export class ProductsComponent {
 
   // ngOnInit() {
   //   for (let index = 0; index < 30; index++) {
-  //     this.productsObj.products.push(new Product('test', 'test', '900000', 'test'));
+  //     this.productsObj.products.push(new Product('test', 'test', '900000', 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/6e61b/MainAfter.avif'));
   //   }
   // }
 }
