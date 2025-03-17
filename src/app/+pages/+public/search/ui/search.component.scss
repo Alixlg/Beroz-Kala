@@ -1,0 +1,23 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input {
+    width: 27em;
+    border: 0;
+    border-radius: 0.3em;
+    padding: 0.4em;
+    transition: all 0.4s;
+    filter: drop-shadow(0 0 0.5em rgb(211, 211, 211));
+  }
+
+  input:hover {
+    border-radius: 1.2em;
+  }
+
+  input:focus {
+    border-radius: 1.2em;
+    outline: 0;
+  }
+}

@@ -1,4 +1,8 @@
 <div class="titel">محصولات</div>
+<div class="search" action="">
+  <app-search [products]="productsObj.products" (onDone)="search($event)"
+    (onVisible)="searchProductVisible = $event"></app-search>
+</div>
 <div class="sortBy">
   <button (mouseenter)="sortMenuVisible =! sortMenuVisible">فیلتر بر اساس</button>
   @if (sortMenuVisible) {
@@ -10,6 +14,8 @@
   </ul>
   }
 </div>
+
+@if (!searchProductVisible) {
 <div class="products">
   @for (item of sortBy(); track $index) {
   <app-product (onBuy)="buy($event)" [product]="item"></app-product>
@@ -19,3 +25,14 @@
   </div>
   }
 </div>
+}@else {
+<div class="products">
+  @for (item of searchedProducts; track $index) {
+  <app-product (onBuy)="buy($event)" [product]="item"></app-product>
+  }@empty {
+  <div class="empty">
+    هیچ محصولی پیدا نشد
+  </div>
+  }
+</div>
+}

@@ -4,11 +4,13 @@ import { PrivateNavigationsComponent } from './+navigations/private-navigations/
 import { ProductsComponent } from './+pages/+public/products/ui/products.component';
 import { BasketComponent } from './+pages/+public/basket/ui/basket.component';
 import { LoginComponent } from './+pages/+public/login/ui/login.component';
-import { ManageProductsComponent } from './+pages/+private/manage-products/ui/manage-products.component';
-import { ManageMembersComponent } from './+pages/+private/manage-members/ui/manage-members.component';
+import { ManageProductsComponent } from './+pages/+private/admin-panel/manage-products/ui/manage-products.component';
+import { ManageMembersComponent } from './+pages/+private/admin-panel/manage-members/ui/manage-members.component';
 import { AboutComponent } from './+pages/+public/about/ui/about.component';
 import { SupportComponent } from './+pages/+public/support/ui/support.component';
 import { HomeComponent } from './+pages/+public/home/ui/home.component';
+import { AdminPanelComponent } from './+pages/+private/admin-panel/ui/admin-panel.component';
+import { UserPanelComponent } from './+pages/+private/user-panel/ui/user-panel.component';
 
 export const routes: Routes = [
   {
@@ -23,9 +25,15 @@ export const routes: Routes = [
   },
   {
     path: 'pr', component: PrivateNavigationsComponent, children: [
-      { path: 'manage-products', component: ManageProductsComponent },
-      { path: 'manage-members', component: ManageMembersComponent },
-      { path: '', redirectTo: 'manage-products', pathMatch: 'prefix' }
+      {
+        path: 'admin-panel', component: AdminPanelComponent, children: [
+          { path: 'manage-products', component: ManageProductsComponent },
+          { path: 'manage-members', component: ManageMembersComponent },
+          { path: '', redirectTo: 'manage-products', pathMatch: 'prefix' }
+        ]
+      },
+      { path: 'user-panel', component: UserPanelComponent, children: [] },
+      { path: '', redirectTo: '/login', pathMatch: 'full' }
     ]
   },
   { path: 'login', component: LoginComponent },

@@ -31,8 +31,7 @@
 
       <div class="password">
         <label for="password">رمز عبور</label>
-        <input [(ngModel)]="password" (keypress.Enter)="login()" name="password" type="password"
-          placeholder="رمز عبور خود را وارد کنید">
+        <input [(ngModel)]="password" name="password" type="password" placeholder="رمز عبور خود را وارد کنید">
       </div>
 
       <a (click)="loginVisible =! loginVisible">حساب ندارید؟ ثبت نام کنید</a>
@@ -68,8 +67,7 @@
 
       <div class="password">
         <label for="email">ایمیل یا شماره موبایل</label>
-        <input [(ngModel)]="email" (keypress.Enter)="singUp()" name="email" type="text"
-          placeholder="ایمیل یا شماره موبایل خود را وارد کنید">
+        <input [(ngModel)]="email" name="email" type="email" placeholder="ایمیل یا شماره موبایل خود را وارد کنید">
       </div>
 
       <a (click)="loginVisible =! loginVisible">حساب دارید؟ وارد شوید</a>

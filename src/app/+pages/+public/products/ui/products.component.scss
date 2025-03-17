@@ -19,6 +19,12 @@
   background-color: rgb(71, 181, 255);
 }
 
+.search {
+  position: absolute;
+  top: 4.2em;
+  right: 0.7em;
+}
+
 .sortBy {
   display: flex;
   flex-direction: column;
@@ -27,7 +33,7 @@
   left: 0.7em;
   top: 4.5em;
   z-index: 1;
-  filter: drop-shadow(0 0 5px gray);
+  filter: drop-shadow(0 0 5px rgb(211, 211, 211));
 
   >button {
     width: 10em;

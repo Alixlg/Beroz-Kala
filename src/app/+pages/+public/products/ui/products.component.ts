@@ -3,16 +3,22 @@ import { Product } from '../../../../+models/product';
 import { BasketService } from '../../../../+services/basket.service';
 import { ProductService } from '../../../../+services/product.service';
 import { ProductComponent } from '../../product/ui/product.component';
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from "../../search/ui/search.component";
 
 @Component({
   selector: 'app-products',
-  imports: [ProductComponent],
+  imports: [ProductComponent, FormsModule, SearchComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
   productsObj = inject(ProductService);
   basketProductsObj = inject(BasketService);
+
+  searchedProducts: Product[] = [];
+  searchProductVisible = false;
+
   sortMenuVisible = false;
   sortByThing = '';
 
@@ -28,6 +34,10 @@ export class ProductsComponent {
         this.basketProductsObj.basket.push(product);
       }
     }
+  }
+
+  search($event: Product[]) {
+    this.searchedProducts = $event;
   }
 
   sortBy() {

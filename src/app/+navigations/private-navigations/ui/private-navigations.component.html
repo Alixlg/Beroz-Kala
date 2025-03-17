@@ -1,8 +1,13 @@
 <ul>
-  <li class="adminPanel">داشبورد مدیریت</li>
-  <li><a routerLink="manage-products">مدیریت محصولات</a></li>
-  <li><a routerLink="manage-members">مدیریت اعضا</a></li>
+  @if(router.url.includes('admin-panel')){
+  <li class="panel">داشبورد مدیریت</li>
+  <li><a routerLink="admin-panel/manage-products">مدیریت محصولات</a></li>
+  <li><a routerLink="admin-panel/manage-members">مدیریت اعضا</a></li>
   <span></span>
+  }@else {
+  <li class="panel">داشبورد اعضا</li>
+  <span></span>
+  }
   <li><a routerLink="/">خروج</a></li>
 </ul>
 

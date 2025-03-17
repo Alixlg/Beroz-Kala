@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Product } from '../../../../+models/product';
-import { BasketService } from '../../../../+services/basket.service';
-import { ProductService } from '../../../../+services/product.service';
+import { Product } from '../../../../../+models/product';
+import { BasketService } from '../../../../../+services/basket.service';
+import { ProductService } from '../../../../../+services/product.service';
+import { DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-manage-products',
-  imports: [FormsModule],
+  imports: [FormsModule, DecimalPipe],
   templateUrl: './manage-products.component.html',
   styleUrl: './manage-products.component.scss'
 })
@@ -82,6 +83,7 @@ export class ManageProductsComponent {
       this.searchProductVisible = false;
       this.editProductVisible = true;
       this.alert = 'محصول با موفقیت یافت شد';
+      this.searchId = '';
       setTimeout(() => { this.alert = '' }, 2200);
     }
     else {

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-private-navigations',
@@ -8,5 +8,5 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './private-navigations.component.scss'
 })
 export class PrivateNavigationsComponent {
-
+  router = inject(Router);
 }

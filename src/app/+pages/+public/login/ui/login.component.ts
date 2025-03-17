@@ -27,7 +27,15 @@ export class LoginComponent {
         this.error = "شما با موفقیت وارد شدید در حال انتفال . . ";
 
         setTimeout(() => {
-          this.router.navigateByUrl('/pr');
+          this.router.navigateByUrl('/pr/admin-panel');
+        }, 1500);
+      }
+      else if (this.username == "user" && this.password == "12345678") {
+        this.isLogin = true;
+        this.error = "شما با موفقیت وارد شدید در حال انتفال . . ";
+
+        setTimeout(() => {
+          this.router.navigateByUrl('/pr/user-panel');
         }, 1500);
       }
       else {
@@ -49,7 +57,7 @@ export class LoginComponent {
       this.error = "شما با موفقیت ثبت نام کردید ! در حال انتفال . . ";
 
       setTimeout(() => {
-        this.router.navigateByUrl('/pb');
+        this.router.navigateByUrl('/pr/user-panel');
       }, 1500);
     }
     else if (Number(this.email) && this.email.includes('09')) {
@@ -57,7 +65,7 @@ export class LoginComponent {
       this.error = "شما با موفقیت ثبت نام کردید ! در حال انتفال . . ";
 
       setTimeout(() => {
-        this.router.navigateByUrl('/pb');
+        this.router.navigateByUrl('/pr/user-panel');
       }, 1500);
     }
     else {
