@@ -28,7 +28,7 @@ export class SearchComponent {
         }
       });
 
-      this.onVisible.emit(true);
+      this.onVisible.emit(false);
       this.onDone.emit(this.searchedProducts);
       return;
     }
@@ -36,7 +36,7 @@ export class SearchComponent {
     if ($event.key == 'Enter' && this.searchValue == '') {
       this.searchedProducts = [];
 
-      this.onVisible.emit(false);
+      this.onVisible.emit(true);
       this.onDone.emit(this.searchedProducts);
     }
   }

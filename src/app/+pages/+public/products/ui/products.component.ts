@@ -17,10 +17,10 @@ export class ProductsComponent {
   basketProductsObj = inject(BasketService);
 
   searchedProducts: Product[] = [];
-  searchProductVisible = false;
+  isSearchBoxEmpty = true;
 
   sortMenuVisible = false;
-  sortByThing = '';
+  productsFiltered = '';
 
   buy($event: Product) {
     if (this.basketProductsObj.basket.every(p => p.id != $event.id)) {
@@ -38,10 +38,17 @@ export class ProductsComponent {
 
   search($event: Product[]) {
     this.searchedProducts = $event;
+
+    if (this.isSearchBoxEmpty) {
+      this.productsFiltered = '';
+    }
+    else {
+      this.productsFiltered = 'search';
+    }
   }
 
-  sortBy() {
-    switch (this.sortByThing) {
+  filterBy() {
+    switch (this.productsFiltered) {
       case 'price-up':
         return this.productsObj.products.sort((a, b) => Number(b.price) - Number(a.price));
 
@@ -53,6 +60,9 @@ export class ProductsComponent {
 
       case 'old-products':
         return this.productsObj.products.sort((a, b) => a.id - b.id);
+
+      case 'search':
+        return this.searchedProducts;
 
       default: return this.productsObj.products;
     }
