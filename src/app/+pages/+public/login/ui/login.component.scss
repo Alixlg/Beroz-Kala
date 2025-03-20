@@ -68,6 +68,15 @@
       text-decoration: none;
       color: rgb(201, 201, 201);
     }
+
+    .progress {
+      text-align: center;
+
+      progress {
+        width: 15em;
+        direction: ltr;
+      }
+    }
   }
 
   button {

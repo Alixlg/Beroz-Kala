@@ -23,6 +23,7 @@ ul {
   li {
     margin: 0.5em;
     transition: all 0.8s;
+
   }
 
   span {
@@ -37,5 +38,24 @@ ul {
   li:hover {
     transition: all 0.8s;
     transform: scale(1.1);
+  }
+
+  .time {
+    input {
+      text-align: center;
+      background-color: rgb(206, 206, 206);
+      border: none;
+      text-align: center;
+      padding: 0.25em 0 0.15em 2em;
+      border-radius: 0.5em;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+
+  .time:hover {
+    transform: scale(1);
   }
 }

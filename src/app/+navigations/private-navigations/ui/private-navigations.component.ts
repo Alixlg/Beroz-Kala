@@ -9,4 +9,5 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 })
 export class PrivateNavigationsComponent {
   router = inject(Router);
+  currentDate = new Date();
 }

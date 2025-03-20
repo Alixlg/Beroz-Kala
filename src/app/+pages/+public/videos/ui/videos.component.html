@@ -1,0 +1,11 @@
+<h1>ویدیو ها</h1>
+<div class="videos">
+  @for (v of videos; track $index) {
+  <div>
+    <video [controls]="true" preload="metadata" [poster]="'/images/VideoPoster.jpg'">
+      <source [src]="v.url" type="video/mp4">
+    </video>
+    <p>{{v.title}}</p>
+  </div>
+  }
+</div>

@@ -22,7 +22,9 @@ export class SearchComponent {
 
       this.products.forEach(p => {
         if (!this.searchedProducts.includes(p)) { //agar az ghabl vojud nadasht
-          if (p.title.includes(this.searchValue.toLocaleLowerCase()) || p.brand.includes(this.searchValue.toLocaleLowerCase())) {
+          if (p.title.includes(this.searchValue.toLocaleLowerCase()) || p.brand.includes(this.searchValue.toLocaleLowerCase())
+            || `${p.title} ${p.brand}`.includes(this.searchValue.toLocaleLowerCase())) {
+
             this.searchedProducts.push(p);
           }
         }
@@ -38,6 +40,7 @@ export class SearchComponent {
 
       this.onVisible.emit(true);
       this.onDone.emit(this.searchedProducts);
+      return;
     }
   }
 }

@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+  padding: 0.3em;
+  font-size: x-large;
+  background-color: rgb(156, 120, 255);
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  div {
+    margin: 4em;
+    background-color: black;
+    border: 0.1em solid black;
+    filter: drop-shadow(0 0 1em black);
+    border-radius: 0.4em;
+
+    p {
+      color: white;
+      transform: scale(1.2);
+      margin-top: 0.1em;
+      margin-bottom: 1.2em;
+      text-align: center;
+    }
+
+    video {
+      border-radius: 0.4em 0.4em 0 0;
+      width: 40vw;
+    }
+  }
+}

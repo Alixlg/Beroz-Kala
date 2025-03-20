@@ -7,7 +7,7 @@
     width: 27em;
     border: 0;
     border-radius: 0.3em;
-    padding: 0.4em;
+    padding: 0.4em 2.3em 0.4em 0.4em;
     transition: all 0.4s;
     filter: drop-shadow(0 0 0.5em rgb(211, 211, 211));
   }
@@ -19,5 +19,11 @@
   input:focus {
     border-radius: 1.2em;
     outline: 0;
+  }
+
+  svg {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
   }
 }

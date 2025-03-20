@@ -11,6 +11,7 @@ import { SupportComponent } from './+pages/+public/support/ui/support.component'
 import { HomeComponent } from './+pages/+public/home/ui/home.component';
 import { AdminPanelComponent } from './+pages/+private/admin-panel/ui/admin-panel.component';
 import { UserPanelComponent } from './+pages/+private/user-panel/ui/user-panel.component';
+import { VideosComponent } from './+pages/+public/videos/ui/videos.component';
 
 export const routes: Routes = [
   {
@@ -20,6 +21,7 @@ export const routes: Routes = [
       { path: 'support', component: SupportComponent },
       { path: 'about', component: AboutComponent },
       { path: 'basket', component: BasketComponent },
+      { path: 'videos', component: VideosComponent },
       { path: '', redirectTo: 'products', pathMatch: 'prefix' }
     ]
   },
