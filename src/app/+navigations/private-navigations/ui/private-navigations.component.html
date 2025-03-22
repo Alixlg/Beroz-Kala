@@ -1,15 +1,25 @@
-<ul>
-  @if(router.url.includes('admin-panel')){
-  <li class="panel">داشبورد مدیریت</li>
-  <li><a routerLink="admin-panel/manage-products">مدیریت محصولات</a></li>
-  <li><a routerLink="admin-panel/manage-members">مدیریت اعضا</a></li>
-  }@else {
-  <li class="panel">داشبورد اعضا</li>
-  }
-  <li class="time"><input type="time" name="time" [readOnly]="true"
-      [value]="`${currentDate.getHours()}:${currentDate.getMinutes()}`"></li>
-  <span></span>
-  <li><a routerLink="/">خروج</a></li>
-</ul>
+<nav>
 
-<router-outlet></router-outlet>
+  <ul>
+
+    @if(router.url.includes('admin-panel')){
+    <li class="panel">داشبورد مدیریت</li>
+    <li><a routerLink="admin-panel/manage-products">مدیریت محصولات</a></li>
+    <li><a routerLink="admin-panel/manage-members">مدیریت اعضا</a></li>
+    }@else {
+    <li class="panel">داشبورد اعضا</li>
+    }
+
+    <li class="time"><input type="time" name="time" [readOnly]="true"
+        [value]="`${currentDate.getHours()}:${currentDate.getMinutes()}`"></li>
+
+    <span></span>
+    <li><a routerLink="/">خروج</a></li>
+
+  </ul>
+
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

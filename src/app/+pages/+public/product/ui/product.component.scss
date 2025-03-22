@@ -14,6 +14,16 @@
   margin: 0.5em;
   border-radius: 0.4em;
 
+
+  .pic {
+    img {
+      height: 15em;
+      max-height: 15em;
+      width: 15em;
+      max-width: 15em;
+    }
+  }
+
   .info {
     display: flex;
     margin-top: 1em;
@@ -36,15 +46,6 @@
 
     button:hover {
       background-color: rgb(180, 180, 180);
-    }
-  }
-
-  .pic {
-    img {
-      height: 15em;
-      max-height: 15em;
-      width: 15em;
-      max-width: 15em;
     }
   }
 }

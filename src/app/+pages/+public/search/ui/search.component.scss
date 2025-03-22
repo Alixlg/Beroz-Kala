@@ -3,22 +3,32 @@
   flex-direction: column;
   align-items: center;
 
-  input {
+  //atr selector
+  input[type='search'] {
     width: 27em;
     border: 0;
     border-radius: 0.3em;
     padding: 0.4em 2.3em 0.4em 0.4em;
     transition: all 0.4s;
+    background-color: transparent;
+    border-bottom: 0.25em solid white;
     filter: drop-shadow(0 0 0.5em rgb(211, 211, 211));
   }
 
+  input:focus,
   input:hover {
-    border-radius: 1.2em;
-  }
-
-  input:focus {
+    background-color: white;
     border-radius: 1.2em;
     outline: 0;
+  }
+
+  input::placeholder {
+    color: rgb(255, 255, 255);
+  }
+
+  input:focus::placeholder,
+  input:hover::placeholder {
+    color: gray;
   }
 
   svg {

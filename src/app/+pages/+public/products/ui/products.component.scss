@@ -1,18 +1,4 @@
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0.5em;
-  justify-content: right;
-
-  .empty {
-    padding: 1em;
-    margin: 0.3em;
-    border-radius: 0.7em;
-    background-color: rgb(248, 164, 164);
-  }
-}
-
-.titel {
+header {
   text-align: center;
   padding: 0.3em;
   font-size: x-large;
@@ -66,5 +52,19 @@
       transform: scale(1);
       border-radius: 1.3em;
     }
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5em;
+  justify-content: right;
+
+  .empty {
+    padding: 1em;
+    margin: 0.3em;
+    border-radius: 0.7em;
+    background-color: rgb(248, 164, 164);
   }
 }

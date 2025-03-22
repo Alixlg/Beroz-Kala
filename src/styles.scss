@@ -5,7 +5,12 @@
 
 * {
   margin: 0;
-  font-family: Vazir;
+  font-family: "Vazir";
+
+  ::selection {
+    color: white;
+    background-color: gray;
+  }
 }
 
 button {

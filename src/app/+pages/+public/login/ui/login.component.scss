@@ -1,5 +1,6 @@
 .back {
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .back:hover {
@@ -23,12 +24,12 @@
   height: 100vh;
   background-color: #e6e6e6;
 
-  .login {
+  .singInForm {
     filter: drop-shadow(0 0 6em rgb(46, 46, 46));
   }
 }
 
-.login {
+.singInForm {
   background-color: #121b18;
   border-radius: 0.4em;
   width: 23em;
@@ -36,35 +37,64 @@
   justify-content: center;
   filter: drop-shadow(0 0 10em #86ffd7);
 
-  label {
-    color: white;
-    font-size: 1.4em;
-    margin: 0.2em;
-  }
-
-  input {
-    transition: all 0.5s;
-    padding: 0.3em;
-    margin: 0.5em;
-    width: 22em;
-    border-radius: 0.3em;
-    border: none;
-    filter: drop-shadow(0 0 40px rgb(124, 124, 124));
-  }
 
   form {
-    margin: 1em;
+    margin: 1.5em;
 
-    >a {
+    header {
+      text-align: center;
+      color: white;
+      margin-top: -0.2em;
+      font-size: 1.8em;
+      filter: drop-shadow(0em 0em 0.7em white);
+    }
+
+    header::first-letter {
+      color: #00b176;
+    }
+
+    label {
+      color: white;
+      font-size: 1.2em;
+      margin: 0.2em 0.4em 0.1em 0;
+    }
+
+    input {
+      transition: all 0.5s;
+      margin: 0.5em;
+      margin-bottom: 1em;
+      width: 22.5em;
+      height: 2em;
+      border-radius: 0.3em;
+      border: none;
+      background-color: transparent;
+      // border: 0.1em solid rgb(221, 221, 221);
+      border-bottom: 0.2em solid #00b176;
+      filter: drop-shadow(0 0 40px rgb(124, 124, 124));
+    }
+
+    input:focus,
+    input:hover {
+      background-color: rgb(221, 221, 221);
+      outline: none;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+    }
+
+    a {
+      cursor: pointer;
       font-size: 0.85em;
       margin: 0.5em;
       color: rgb(203, 255, 198);
-      cursor: pointer;
       text-decoration: underline;
       transition: all 0.3s;
     }
 
-    >a:hover {
+    a:hover {
       text-decoration: none;
       color: rgb(201, 201, 201);
     }
@@ -77,88 +107,70 @@
         direction: ltr;
       }
     }
-  }
 
-  button {
-    padding: 0.2em 5em 0.2em 5em;
-    margin: 1em;
-    margin-top: 2em;
-    border-radius: 0.4em;
-    background: #08F39F;
-    color: #121b18;
-    border: none;
-    transition: all 0.5s;
-  }
+    button {
+      height: 2.5em;
+      margin: 1em 0.5em;
+      margin-bottom: 0.3em;
+      border-radius: 0.4em;
+      background: rgb(66, 177, 121);
+      color: #1d1d1d;
+      border: none;
+      transition: all 0.5s;
+      filter: drop-shadow(0em 0em 1.8em rgb(66, 66, 66));
+    }
 
-  .button {
-    display: flex;
-    justify-content: center;
-  }
+    button:not([disabled]):hover {
+      color: rgb(0, 0, 0);
+      background: rgb(94, 255, 175);
+      transform: scale(0.97);
+    }
 
-  .username {
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-  }
+    button:disabled {
+      cursor: no-drop;
+      transform: scale(1);
+      color: rgb(163, 163, 163);
+      background-color: #454545;
+      filter: drop-shadow(0em 0em 0.7em rgb(66, 66, 66));
+    }
 
-  .password {
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-  }
+    .alert {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1em;
 
-  .error {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 70, 70, 0.432);
-    text-align: center;
-    margin: auto;
-    padding: 0.3em 0 0.3em 0;
-    height: 4em;
-    border-radius: 1em;
-    width: 20em;
-    color: white;
-    font-size: 0.9em;
-  }
+      .error {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 70, 70, 0.432);
+        text-align: center;
+        padding: 0.3em 0 0.3em 0;
+        height: 4em;
+        border-radius: 1em;
+        width: 20em;
+        color: white;
+        font-size: 0.9em;
+      }
 
-  .successLogin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(91, 255, 88, 0.514);
-    text-align: center;
-    margin: auto;
-    padding: 0.3em 0 0.3em 0;
-    height: 4em;
-    border-radius: 1em;
-    width: 20em;
-    color: white;
-    font-size: 0.9em;
-  }
-
-  button:not([disabled]):hover {
-    color: white;
-    background-color: #2b8969;
-    transform: scale(1.1);
-  }
-
-  button:disabled {
-    transform: scale(1);
-    cursor: no-drop;
-    background-color: #454545;
-  }
-
-  input:hover {
-    background-color: rgb(221, 221, 221);
-  }
-
-  input:focus {
-    outline: none;
+      .successLogin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(91, 255, 88, 0.514);
+        padding: 0.3em 0 0.3em 0;
+        height: 4em;
+        border-radius: 1em;
+        width: 20em;
+        color: white;
+        font-size: 0.9em;
+      }
+    }
   }
 }
 
-.darkMode {
+.darkModeButton {
   position: absolute;
   top: 1em;
   left: 1em;
@@ -169,7 +181,7 @@
   }
 }
 
-.darkBack {
+.darkBackButton {
   position: absolute;
   top: 1.2em;
   right: 0.8em;
@@ -183,7 +195,7 @@
   }
 }
 
-.lightBack {
+.lightBackButton {
   position: absolute;
   top: 1.2em;
   right: 0.8em;

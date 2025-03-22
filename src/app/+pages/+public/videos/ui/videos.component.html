@@ -1,5 +1,7 @@
 <h1>ویدیو ها</h1>
+
 <div class="videos">
+
   @for (v of videos; track $index) {
   <div>
     <video [controls]="true" preload="metadata" [poster]="'/images/VideoPoster.jpg'">
@@ -8,4 +10,5 @@
     <p>{{v.title}}</p>
   </div>
   }
+
 </div>

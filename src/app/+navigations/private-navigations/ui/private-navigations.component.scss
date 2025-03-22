@@ -1,61 +1,63 @@
-ul {
-  display: flex;
-  background-color: rgb(20, 123, 89);
-  list-style-type: none;
-  padding: 0.5em;
-  margin: 0;
-  justify-content: center;
+nav {
 
-  .panel {
-    color: rgb(15, 15, 15);
-    filter: drop-shadow(0 0 3px white);
-  }
-
-  .panel:hover {
-    transform: scale(1);
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  li {
-    margin: 0.5em;
-    transition: all 0.8s;
-
-  }
-
-  span {
+  ul {
     display: flex;
-    flex: 1 1 0;
-  }
+    background-color: rgb(20, 123, 89);
+    list-style-type: none;
+    padding: 0.5em;
+    margin: 0;
+    justify-content: center;
 
-  a:hover {
-    color: rgb(64, 64, 64);
-  }
-
-  li:hover {
-    transition: all 0.8s;
-    transform: scale(1.1);
-  }
-
-  .time {
-    input {
-      text-align: center;
-      background-color: rgb(206, 206, 206);
-      border: none;
-      text-align: center;
-      padding: 0.25em 0 0.15em 2em;
-      border-radius: 0.5em;
+    .panel {
+      color: rgb(15, 15, 15);
+      filter: drop-shadow(0 0 3px white);
     }
 
-    input:focus {
-      outline: none;
+    .panel:hover {
+      transform: scale(1);
     }
-  }
 
-  .time:hover {
-    transform: scale(1);
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    li {
+      margin: 0.5em;
+      transition: all 0.8s;
+    }
+
+    span {
+      display: flex;
+      flex: 1 1 0;
+    }
+
+    a:hover {
+      color: rgb(64, 64, 64);
+    }
+
+    li:hover {
+      transition: all 0.8s;
+      transform: scale(1.1);
+    }
+
+    .time {
+      input {
+        text-align: center;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        text-align: center;
+        padding: 0.25em 0 0.15em 2em;
+        border-radius: 0.5em;
+      }
+
+      input:focus {
+        outline: none;
+      }
+    }
+
+    .time:hover {
+      transform: scale(1);
+    }
   }
 }

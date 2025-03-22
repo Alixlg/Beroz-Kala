@@ -1,5 +1,7 @@
-<div class="titel">سبد خرید</div>
-<div class="basket">
+<header>سبد خرید</header>
+
+<section class="basket">
+
   @for (item of basketProductsObj.basket; track $index) {
   <app-product (onRemove)="remove($event)" [product]="item" [isBasket]="true"></app-product>
   }@empty {
@@ -8,4 +10,4 @@
   </div>
   }
 
-</div>
+</section>

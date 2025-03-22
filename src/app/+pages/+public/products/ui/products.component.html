@@ -1,21 +1,30 @@
-<div class="titel">محصولات</div>
-<div class="search" action="">
+<header>محصولات</header>
+
+<section class="search" action="">
+
   <app-search [products]="productsObj.products" (onDone)="search($event)"
     (onVisible)="isSearchBoxEmpty = $event"></app-search>
-</div>
-<div class="sortBy">
+
+</section>
+
+<section class="sortBy">
+
   <button (mouseenter)="sortMenuVisible =! sortMenuVisible">فیلتر بر اساس</button>
   @if (sortMenuVisible) {
   <ul>
+
     <li><button (click)="this.productsFiltered = 'price-up'; sortMenuVisible = false">قیمت (زیاد به کم)</button></li>
     <li><button (click)="this.productsFiltered = 'price-down'; sortMenuVisible = false">قیمت (کم به زیاد)</button></li>
     <li><button (click)="this.productsFiltered = 'new-products'; sortMenuVisible = false">محصولات جدید</button></li>
     <li><button (click)="this.productsFiltered = 'old-products'; sortMenuVisible = false">محصولات قدیمی</button></li>
+
   </ul>
   }
-</div>
 
-<div class="products">
+</section>
+
+<section class="products">
+
   @for (item of filterBy(); track $index) {
   <app-product (onBuy)="buy($event)" [product]="item"></app-product>
   }@empty {
@@ -23,4 +32,5 @@
     هیچ محصولی پیدا نشد
   </div>
   }
-</div>
+
+</section>
