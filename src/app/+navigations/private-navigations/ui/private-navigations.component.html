@@ -10,8 +10,11 @@
     <li class="panel">داشبورد اعضا</li>
     }
 
-    <li class="time"><input type="time" name="time" [readOnly]="true"
-        [value]="`${currentDate.getHours()}:${currentDate.getMinutes()}`"></li>
+    <li class="timeBox">
+      <time>
+        {{currentDate.toLocaleTimeString()}}
+      </time>
+    </li>
 
     <span></span>
     <li><a routerLink="/">خروج</a></li>

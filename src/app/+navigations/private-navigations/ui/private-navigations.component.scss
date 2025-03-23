@@ -41,22 +41,19 @@ nav {
       transform: scale(1.1);
     }
 
-    .time {
-      input {
-        text-align: center;
-        background-color: rgb(206, 206, 206);
-        border: none;
-        text-align: center;
-        padding: 0.25em 0 0.15em 2em;
-        border-radius: 0.5em;
-      }
-
-      input:focus {
-        outline: none;
-      }
+    time {
+      direction: ltr;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 6.5em;
+      height: 1.8em;
+      background-color: rgb(206, 206, 206);
+      border-radius: 0.5em;
+      font-size: 0.9em;
     }
 
-    .time:hover {
+    .timeBox:hover {
       transform: scale(1);
     }
   }
