@@ -1,0 +1,16 @@
+@keyframes animate {}
+
+div {
+  margin: 5em;
+
+  button {
+    width: 10em;
+    height: 4em;
+    border: none;
+    background-color: rgb(168, 168, 168);
+  }
+
+  button:hover {
+    transform: translate(1em, 1em);
+  }
+}

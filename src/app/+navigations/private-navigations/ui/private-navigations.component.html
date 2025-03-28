@@ -3,7 +3,7 @@
   <ul>
 
     @if(router.url.includes('admin-panel')){
-    <li class="panel">داشبورد مدیریت</li>
+    <li>داشبورد مدیریت</li>
     <li><a routerLink="admin-panel/manage-products">مدیریت محصولات</a></li>
     <li><a routerLink="admin-panel/manage-members">مدیریت اعضا</a></li>
     }@else {
@@ -13,6 +13,9 @@
     <li class="timeBox">
       <time>
         {{currentDate.toLocaleTimeString()}}
+      </time>
+      <time>
+        {{currentDate.toLocaleDateString()}}
       </time>
     </li>
 

@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 
+
 @Component({
   selector: 'app-private-navigations',
   imports: [RouterOutlet, RouterLink],
@@ -9,5 +10,5 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 })
 export class PrivateNavigationsComponent {
   router = inject(Router);
-  currentDate = new Date();
+  currentDate = new Date;
 }

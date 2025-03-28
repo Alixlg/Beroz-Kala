@@ -8,12 +8,12 @@ nav {
     margin: 0;
     justify-content: center;
 
-    .panel {
+    li:first-child {
       color: rgb(15, 15, 15);
       filter: drop-shadow(0 0 3px white);
     }
 
-    .panel:hover {
+    li:first-child:hover {
       transform: scale(1);
     }
 
@@ -50,7 +50,16 @@ nav {
       height: 1.8em;
       background-color: rgb(206, 206, 206);
       border-radius: 0.5em;
-      font-size: 0.9em;
+      font-size: 0.75em;
+    }
+
+    time:first-child {
+      background-color: rgb(37, 37, 37);
+      color: white;
+    }
+
+    .timeBox {
+      margin: 0;
     }
 
     .timeBox:hover {
