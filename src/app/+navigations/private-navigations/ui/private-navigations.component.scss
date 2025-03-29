@@ -8,37 +8,37 @@ nav {
     margin: 0;
     justify-content: center;
 
-    li:first-child {
-      color: rgb(15, 15, 15);
-      filter: drop-shadow(0 0 3px white);
-    }
+    li {
+      margin: 0.5em;
+      transition: all 0.8s;
 
-    li:first-child:hover {
-      transform: scale(1);
+      &:hover {
+        transition: all 0.8s;
+        transform: scale(1.1);
+      }
+
+      &:first-child {
+        color: rgb(15, 15, 15);
+        filter: drop-shadow(0 0 3px white);
+      }
+
+      &:first-child:hover {
+        transform: scale(1);
+      }
     }
 
     a {
       text-decoration: none;
       color: white;
-    }
 
-    li {
-      margin: 0.5em;
-      transition: all 0.8s;
+      &:hover {
+        color: rgb(64, 64, 64);
+      }
     }
 
     span {
       display: flex;
       flex: 1 1 0;
-    }
-
-    a:hover {
-      color: rgb(64, 64, 64);
-    }
-
-    li:hover {
-      transition: all 0.8s;
-      transform: scale(1.1);
     }
 
     time {
@@ -51,19 +51,19 @@ nav {
       background-color: rgb(206, 206, 206);
       border-radius: 0.5em;
       font-size: 0.75em;
-    }
 
-    time:first-child {
-      background-color: rgb(37, 37, 37);
-      color: white;
+      &:first-child {
+        background-color: rgb(37, 37, 37);
+        color: white;
+      }
     }
 
     .timeBox {
       margin: 0;
-    }
 
-    .timeBox:hover {
-      transform: scale(1);
+      &:hover {
+        transform: scale(1);
+      }
     }
   }
 }
