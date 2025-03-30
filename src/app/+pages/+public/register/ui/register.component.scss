@@ -58,7 +58,7 @@ header {
   height: 100vh;
   background-color: #121b18;
 
-  .loginForm {
+  .registerForm {
     filter: drop-shadow(0 0 10em #86ffd7);
   }
 }
@@ -69,12 +69,12 @@ header {
   height: 100vh;
   background-color: #e6e6e6;
 
-  .loginForm {
+  .registerForm {
     filter: drop-shadow(0 0 6em rgb(46, 46, 46));
   }
 }
 
-.loginForm {
+.registerForm {
   @include Flex();
   background-color: #121b18;
   border-radius: 0.4em;
@@ -139,6 +139,15 @@ header {
       &:hover {
         text-decoration: none;
         color: rgb(201, 201, 201);
+      }
+    }
+
+    .progress {
+      text-align: center;
+
+      progress {
+        width: 15em;
+        direction: ltr;
       }
     }
 

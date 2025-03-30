@@ -13,11 +13,9 @@ export class LoginComponent {
 
   isDarkMode: boolean = true;
   isLogin: boolean = false;
-  loginVisible: boolean = true;
 
   username: string = "";
   password: string = "";
-  email: string = "";
   error: string = "";
 
   login() {
@@ -43,30 +41,6 @@ export class LoginComponent {
         this.error = "رمز عبور یا نام کاربری اشتباه است";
         setTimeout(() => { this.error = '' }, 2000);
       }
-    }
-    else {
-      this.isLogin = false;
-      this.error = "لطفا مقادیر خواسته شده را به درستی وارد کنید";
-      setTimeout(() => { this.error = '' }, 2000);
-    }
-  }
-
-  singUp() {
-    if (this.email.includes('@gmail.com') || this.email.includes('gmail@.com')) {
-      this.isLogin = true;
-      this.error = "شما با موفقیت ثبت نام کردید ! در حال انتفال . . ";
-
-      setTimeout(() => {
-        this.router.navigateByUrl('/pr/user-panel');
-      }, 1500);
-    }
-    else if (Number(this.email) && this.email.includes('09')) {
-      this.isLogin = true;
-      this.error = "شما با موفقیت ثبت نام کردید ! در حال انتفال . . ";
-
-      setTimeout(() => {
-        this.router.navigateByUrl('/pr/user-panel');
-      }, 1500);
     }
     else {
       this.isLogin = false;

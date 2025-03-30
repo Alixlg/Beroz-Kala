@@ -14,8 +14,8 @@
   margin: 0.5em;
   border-radius: 0.4em;
 
-
   .pic {
+
     img {
       height: 15em;
       max-height: 15em;
@@ -42,10 +42,10 @@
       border-radius: 0.8em;
       margin: 0 0.8em 0 0.2em;
       background-color: rgb(203, 203, 203);
-    }
 
-    button:hover {
-      background-color: rgb(180, 180, 180);
+      &:hover {
+        background-color: rgb(180, 180, 180);
+      }
     }
   }
 }

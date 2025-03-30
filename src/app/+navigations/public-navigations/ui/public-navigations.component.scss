@@ -11,25 +11,25 @@ nav {
     a {
       text-decoration: none;
       color: white;
+
+      &:hover {
+        color: rgb(64, 64, 64);
+      }
     }
 
     li {
       margin: 0.5em;
       transition: all 0.8s;
+
+      &:hover {
+        transition: all 0.8s;
+        transform: scale(1.1);
+      }
     }
 
     span {
       display: flex;
       flex: 1 1 0;
-    }
-
-    a:hover {
-      color: rgb(64, 64, 64);
-    }
-
-    li:hover {
-      transition: all 0.8s;
-      transform: scale(1.1);
     }
   }
 }
@@ -45,10 +45,10 @@ section {
     zoom: 89%;
     background-color: yellow;
     cursor: pointer;
-  }
 
-  .basket:hover {
-    background-color: rgb(179, 179, 179);
+    &:hover {
+      background-color: rgb(179, 179, 179);
+    }
   }
 
   .basketCount {
@@ -64,5 +64,4 @@ section {
     zoom: 89%;
     background-color: rgb(229, 0, 0);
   }
-
 }

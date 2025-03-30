@@ -12,23 +12,25 @@
     transition: all 0.4s;
     background-color: transparent;
     border-bottom: 0.25em solid white;
+    color: white;
     filter: drop-shadow(0 0 0.5em rgb(211, 211, 211));
-  }
 
-  input:focus,
-  input:hover {
-    background-color: white;
-    border-radius: 1.2em;
-    outline: 0;
-  }
+    &:focus,
+    &:hover {
+      color: black;
+      background-color: white;
+      border-radius: 1.2em;
+      outline: 0;
+    }
 
-  input::placeholder {
-    color: rgb(255, 255, 255);
-  }
+    &::placeholder {
+      color: rgb(255, 255, 255);
+    }
 
-  input:focus::placeholder,
-  input:hover::placeholder {
-    color: gray;
+    &:focus::placeholder,
+    &:hover::placeholder {
+      color: gray;
+    }
   }
 
   svg {

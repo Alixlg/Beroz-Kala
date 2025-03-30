@@ -1,8 +1,8 @@
-<section [class.dark]="!isDarkMode" [class.light]="isDarkMode">
+<section [class.darkMode]="!isDarkMode" [class.lightMode]="isDarkMode">
 
   <header>
 
-    <div class="darkModeButton">
+    <div class="changeTheme">
       <a (click)="isDarkMode =! isDarkMode">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="2em"
           height="2em" viewBox="0 0 256 256" xml:space="preserve">
@@ -19,15 +19,14 @@
       </a>
     </div>
 
-    <div class="back" [class.darkBackButton]="!isDarkMode" [class.lightBackButton]="isDarkMode">
+    <div class="defultBackButtom" [class.lightModeBackButton]="isDarkMode" [class.darkModeBackButton]="!isDarkMode">
       <a routerLink="">برگشت</a>
     </div>
 
   </header>
 
   <main>
-    @if (loginVisible) {
-    <section class="singInForm">
+    <section class="loginForm">
       <form action="">
         <header>ورود</header>
 
@@ -45,7 +44,7 @@
 
         </section>
 
-        <a (click)="loginVisible =! loginVisible">حساب ندارید؟ ثبت نام کنید</a>
+        <a routerLink="/register">حساب ندارید؟ ثبت نام کنید</a>
 
         @if(username.length >= 2){
         <section>
@@ -58,7 +57,7 @@
         @if (error != "") {
         <section class="alert">
 
-          <div [class.error]="!isLogin" [class.successLogin]="isLogin">
+          <div [class.errorAlert]="!isLogin" [class.successAlert]="isLogin">
             <p>{{error}}</p>
           </div>
 
@@ -66,57 +65,7 @@
         }
       </form>
     </section>
-    }
 
-    @if (!loginVisible) {
-    <section class="singInForm">
-      <form action="">
-        <header>ثبت نام</header>
-
-        <section>
-
-          <label for="username">نام کاربری</label>
-          <input [(ngModel)]="username" name="username" type="text" placeholder="نام کاربری خود را وارد کنید">
-
-        </section>
-
-        <section>
-
-          <label for="password">کلمه عبور</label>
-          <input [(ngModel)]="password" name="password" type="password" placeholder="رمز عبور خود را وارد کنید">
-
-        </section>
-
-        <div class="progress"><progress [max]="100" [value]="30"></progress></div>
-
-        <section>
-
-          <label for="email">ایمیل یا شماره موبایل</label>
-          <input [(ngModel)]="email" name="email" type="email" placeholder="ایمیل یا شماره موبایل خود را وارد کنید">
-
-        </section>
-
-        <a (click)="loginVisible =! loginVisible">حساب دارید؟ وارد شوید</a>
-
-        <section>
-
-          <button (click)="singUp()" [disabled]="username.length < 2||password.length < 8 || email.length < 2">ثبت
-            نام</button>
-
-        </section>
-
-        @if (error != "") {
-        <section class="alert">
-
-          <div [class.error]="!isLogin" [class.successLogin]="isLogin">
-            <p>{{error}}</p>
-          </div>
-
-        </section>
-        }
-      </form>
-    </section>
-    }
   </main>
 
 </section>

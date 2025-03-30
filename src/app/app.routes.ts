@@ -12,6 +12,7 @@ import { HomeComponent } from './+pages/+public/home/ui/home.component';
 import { AdminPanelComponent } from './+pages/+private/admin-panel/ui/admin-panel.component';
 import { UserPanelComponent } from './+pages/+private/user-panel/ui/user-panel.component';
 import { VideosComponent } from './+pages/+public/videos/ui/videos.component';
+import { RegisterComponent } from './+pages/+public/register/ui/register.component';
 
 export const routes: Routes = [
   {
@@ -39,5 +40,6 @@ export const routes: Routes = [
     ]
   },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '', redirectTo: 'pb', pathMatch: 'full' }
 ];
