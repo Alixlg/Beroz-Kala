@@ -1,0 +1,33 @@
+section {
+    position: absolute;
+    top: 9em;
+    left: 3em;
+    z-index: 2;
+
+    .defultAlert {
+        width: 17em;
+        text-align: center;
+        border-radius: 1em;
+        padding: 1em;
+        margin: 1em 0;
+        color: white;
+        background-color: gray;
+        filter: drop-shadow(0em 0em 1em rgb(55, 55, 55));
+    }
+
+    .specialAlert {
+        background: linear-gradient(83deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    }
+
+    .warningAlert {
+        background: linear-gradient(83deg, rgba(215, 124, 39, 1) 12%, rgba(251, 252, 109, 1) 100%);
+    }
+
+    .errorAlert {
+        background: linear-gradient(83deg, rgba(195, 34, 34, 1) 12%, rgba(252, 109, 110, 1) 100%);
+    }
+
+    .successAlert {
+        background: linear-gradient(83deg, rgba(73, 215, 39, 1) 12%, rgba(207, 248, 101, 1) 96%, rgba(224, 252, 109, 1) 100%);
+    }
+}

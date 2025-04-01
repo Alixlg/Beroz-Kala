@@ -1,6 +1,7 @@
 import { DecimalPipe } from '@angular/common';
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, OnChanges, OnInit, Output } from '@angular/core';
 import { Product } from '../../../../+models/product';
+import { AlertService } from '../../../../+services/alert.service';
 
 @Component({
   selector: 'app-product',
@@ -13,9 +14,11 @@ export class ProductComponent {
   @Output() onBuy = new EventEmitter<Product>;
   @Output() onRemove = new EventEmitter<Product>;
   @Input() isBasket: boolean = false;
+  @Input() isDisabel = false;
+
+  productAlertObj = inject(AlertService);
 
   countPriceUpdater() {
-    let countPrice: string | Number = '';
-    return countPrice = this.isBasket ? Number(this.product.price) * this.product.count : this.product.price;
+    return this.isBasket ? Number(this.product.price) * this.product.count : this.product.price;
   }
 }

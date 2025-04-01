@@ -13,7 +13,7 @@
   <div class="info">
 
     <div class="text">
-      
+
       <span>{{product.title}} ({{product.brand}})
         @if (isBasket) {
         {{product.count}}x
@@ -24,12 +24,12 @@
 
     </div>
     @if (!isBasket) {
-    <button (click)="onBuy.emit(product)">
+    <button [disabled]="isDisabel" (click)="onBuy.emit(product)">
       افزودن به سبد خرید
     </button>
     }
     @else {
-    <button (click)="onRemove.emit(product)">
+    <button [disabled]="isDisabel" (click)="onRemove.emit(product)">
       حذف از سبد خرید
     </button>
     }

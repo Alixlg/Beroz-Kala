@@ -26,7 +26,7 @@
 <section class="products">
 
   @for (item of filterBy(); track $index) {
-  <app-product (onBuy)="buy($event)" [product]="item"></app-product>
+  <app-product (onBuy)="buy($event)" [product]="item" [isDisabel]="item.isDisable"></app-product>
   }@empty {
   <div class="empty">
     هیچ محصولی پیدا نشد

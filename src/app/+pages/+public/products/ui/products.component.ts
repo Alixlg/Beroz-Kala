@@ -5,6 +5,8 @@ import { ProductService } from '../../../../+services/product.service';
 import { ProductComponent } from '../../product/ui/product.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from "../../search/ui/search.component";
+import { AlertService } from '../../../../+services/alert.service';
+import { AlertBody } from '../../../../+models/alertBody';
 
 @Component({
   selector: 'app-products',
@@ -13,6 +15,7 @@ import { SearchComponent } from "../../search/ui/search.component";
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
+  alertSystemObj = inject(AlertService);
   productsObj = inject(ProductService);
   basketProductsObj = inject(BasketService);
 
@@ -25,6 +28,14 @@ export class ProductsComponent {
   buy($event: Product) {
     if (this.basketProductsObj.basket.every(p => p.id != $event.id)) {
       this.basketProductsObj.basket.push($event);
+
+      $event.isDisable = true;
+      let alert = new AlertBody(`محصول ${$event.title} ${$event.brand} با موفقیت به سبد اضافه شد`);
+      this.alertSystemObj.alertBodyList.push(alert);
+      setTimeout(() => {
+        this.alertSystemObj.alertBodyList = this.alertSystemObj.alertBodyList.filter(x => alert != x);
+        $event.isDisable = false;
+      }, 2000);
     }
     else {
       let product = this.basketProductsObj.basket.find(p => p.id == $event.id);
@@ -32,6 +43,14 @@ export class ProductsComponent {
       if (product) { // agar undefine nabood
         product.count += 1;
         this.basketProductsObj.basket.push(product);
+
+        $event.isDisable = true;
+        let alert = new AlertBody(`محصول ${$event.title} ${$event.brand} با موفقیت به سبد اضافه شد`);
+        this.alertSystemObj.alertBodyList.push(alert);
+        setTimeout(() => {
+          this.alertSystemObj.alertBodyList = this.alertSystemObj.alertBodyList.filter(x => alert != x);
+          $event.isDisable = false;
+        }, 2000);
       }
     }
   }
