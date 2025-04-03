@@ -24,12 +24,12 @@
 
     </div>
     @if (!isBasket) {
-    <button [disabled]="isDisabel" (click)="onBuy.emit(product)">
+    <button [disabled]="isAddDisable" (click)="onBuy.emit(product)">
       افزودن به سبد خرید
     </button>
     }
     @else {
-    <button [disabled]="isDisabel" (click)="onRemove.emit(product)">
+    <button [disabled]="isRemoveDisable" (click)="onRemove.emit(product)">
       حذف از سبد خرید
     </button>
     }

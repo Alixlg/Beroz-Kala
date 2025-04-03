@@ -14,7 +14,8 @@ export class ProductComponent {
   @Output() onBuy = new EventEmitter<Product>;
   @Output() onRemove = new EventEmitter<Product>;
   @Input() isBasket: boolean = false;
-  @Input() isDisabel = false;
+  @Input() isAddDisable = false;
+  @Input() isRemoveDisable = false;
 
   productAlertObj = inject(AlertService);
 

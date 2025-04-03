@@ -4,7 +4,7 @@
 
   @for (item of basketProductsObj.basket; track $index) {
   <app-product (onRemove)="remove($event)" [product]="item" [isBasket]="true"
-    [isDisabel]="item.isDisable"></app-product>
+    [isRemoveDisable]="item.isRemoveDisable"></app-product>
   }@empty {
   <div class="emptyBasket">
     شما هیچ محصولی در سبد خود اضافه نکردید

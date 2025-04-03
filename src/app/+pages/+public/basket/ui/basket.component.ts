@@ -19,12 +19,11 @@ export class BasketComponent implements OnInit {
     if ($event.count == 1) {
       this.basketProductsObj.basket = this.basketProductsObj.basket.filter(p => p.id != $event.id);
 
-      $event.isDisable = true;
-      let alert = new AlertBody(`محصول ${$event.title} ${$event.brand} با موفقیت از سبد حذف شد`);
-      this.alertSystemObj.alertBodyList.push(alert);
+      this.alertSystemObj.newAlert(`محصول ${$event.title} ${$event.brand} با موفقیت از سبد حذف شد`, 2000);
+
+      $event.isRemoveDisable = true;
       setTimeout(() => {
-        this.alertSystemObj.alertBodyList = this.alertSystemObj.alertBodyList.filter(x => alert != x);
-        $event.isDisable = false;
+        $event.isRemoveDisable = false;
       }, 2000);
     }
     else {
@@ -35,12 +34,11 @@ export class BasketComponent implements OnInit {
         this.basketProductsObj.basket.push(product);
         this.basketProductsObj.basket.sort((a, b) => b.id - a.id);
 
-        $event.isDisable = true;
-        let alert = new AlertBody(`محصول ${$event.title} ${$event.brand} با موفقیت از سبد حذف شد`);
-        this.alertSystemObj.alertBodyList.push(alert);
+        this.alertSystemObj.newAlert(`محصول ${$event.title} ${$event.brand} با موفقیت از سبد حذف شد`, 2000);
+
+        $event.isRemoveDisable = true;
         setTimeout(() => {
-          this.alertSystemObj.alertBodyList = this.alertSystemObj.alertBodyList.filter(x => alert != x);
-          $event.isDisable = false;
+          $event.isRemoveDisable = false;
         }, 2000);
       }
     }

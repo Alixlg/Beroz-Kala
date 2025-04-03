@@ -176,27 +176,5 @@ header {
         filter: drop-shadow(0em 0em 0.7em rgb(66, 66, 66));
       }
     }
-
-    .alert {
-      @include Flex();
-      margin-top: 1em;
-
-      .errorAlert {
-        @include Flex();
-        background-color: rgba(255, 70, 70, 0.432);
-        text-align: center;
-        padding: 0.3em 0 0.3em 0;
-        height: 4em;
-        border-radius: 1em;
-        width: 20em;
-        color: white;
-        font-size: 0.9em;
-      }
-
-      .successAlert {
-        @extend .errorAlert;
-        background-color: rgba(91, 255, 88, 0.514);
-      }
-    }
   }
 }

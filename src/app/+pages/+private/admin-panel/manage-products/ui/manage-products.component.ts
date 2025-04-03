@@ -4,6 +4,7 @@ import { Product } from '../../../../../+models/product';
 import { BasketService } from '../../../../../+services/basket.service';
 import { ProductService } from '../../../../../+services/product.service';
 import { DecimalPipe } from '@angular/common';
+import { AlertService } from '../../../../../+services/alert.service';
 
 @Component({
   selector: 'app-manage-products',
@@ -14,12 +15,12 @@ import { DecimalPipe } from '@angular/common';
 export class ManageProductsComponent {
   productsObj = inject(ProductService);
   basketObj = inject(BasketService);
+  alertObj = inject(AlertService);
 
   addProductVisible: boolean = false;
   delProductVisible: boolean = false;
   searchProductVisible: boolean = false;
   editProductVisible: boolean = false;
-  alert: string = '';
 
   productBrand: string = '';
   productTitle: string = '';
@@ -31,15 +32,14 @@ export class ManageProductsComponent {
 
   addProduct() {
     if (!this.productBrand || !this.productTitle || !this.productPrice || !this.productPic) {
-      this.alert = 'لطفاً تمام فیلدها را پر کنید';
-      setTimeout(() => { this.alert = '' }, 2200);
+      this.alertObj.newAlert('لطفاً تمام فیلدها را پر کنید', 2200, true);
 
       return;
     }
     if (isNaN(Number(this.productPrice))) {
       this.productPrice = '';
-      this.alert = 'لطفاً برای قیمت عدد وارد کنید';
-      setTimeout(() => { this.alert = '' }, 2200);
+      this.alertObj.newAlert('لطفاً برای قیمت عدد وارد کنید', 2200, true);
+
       return;
     }
 
@@ -52,27 +52,26 @@ export class ManageProductsComponent {
     this.productTitle = '';
     this.productPrice = '';
     this.productPic = '';
-    this.alert = 'محصول شما با موفقیت ثبت شد';
-    setTimeout(() => { this.alert = '' }, 2200);
+
+    this.alertObj.newAlert('محصول شما با موفقیت ثبت شد', 2200);
   }
 
   delProduct(product: Product) {
     this.productsObj.products = this.productsObj.products.filter(p => p.id != product.id);
     this.basketObj.basket = this.basketObj.basket.filter(p => p.id != product.id);
-    this.alert = 'محصول شما با موفقیت حذف شد';
-    setTimeout(() => { this.alert = '' }, 2200);
+    this.alertObj.newAlert('محصول شما با موفقیت حذف شد', 2200);
   }
 
   searchProduct() {
     if (this.searchId == '') {
-      this.alert = 'لطفا شناسه را وارد کنید';
-      setTimeout(() => { this.alert = '' }, 2200);
+      this.alertObj.newAlert('لطفا شناسه را وارد کنید', 2200, true);
+
       return;
     }
     if (isNaN(Number(this.searchId))) {
-      this.alert = 'شناسه نامعتبر میباشد';
-      setTimeout(() => { this.alert = '' }, 2200);
+      this.alertObj.newAlert('شناسه نامعتبر میباشد', 2200, false, true);
       this.searchId = '';
+
       return;
     }
 
@@ -82,14 +81,13 @@ export class ManageProductsComponent {
       this.searchedProduct = product;
       this.searchProductVisible = false;
       this.editProductVisible = true;
-      this.alert = 'محصول با موفقیت یافت شد';
+
+      this.alertObj.newAlert('محصول شما با موفقیت یافت شد', 2200);
       this.searchId = '';
-      setTimeout(() => { this.alert = '' }, 2200);
     }
     else {
+      this.alertObj.newAlert('محصول مورد نظر یافت نشد لطفا شناسه صحیح وارد کنید', 2200, false, true);
       this.searchId = '';
-      this.alert = 'محصول مورد نظر یافت نشد لطفا شناسه صحیح وارد کنید';
-      setTimeout(() => { this.alert = '' }, 2200);
 
       return;
     }
@@ -98,15 +96,13 @@ export class ManageProductsComponent {
   editProduct() {
     if (this.searchedProduct) {
       if (!this.productBrand || !this.productTitle || !this.productPrice || !this.productPic) {
-        this.alert = 'لطفاً تمام فیلدها را پر کنید';
-        setTimeout(() => { this.alert = '' }, 2200);
+        this.alertObj.newAlert('لطفاً تمام فیلدها را پر کنید', 2200, false, true);
 
         return;
       }
       if (isNaN(Number(this.productPrice))) {
         this.productPrice = '';
-        this.alert = 'لطفاً برای قیمت عدد وارد کنید';
-        setTimeout(() => { this.alert = '' }, 2200);
+        this.alertObj.newAlert('لطفاً برای قیمت عدد وارد کنید', 2200, true);
 
         return;
       }
@@ -124,12 +120,11 @@ export class ManageProductsComponent {
       this.productTitle = '';
       this.productPrice = '';
       this.productPic = '';
-      this.alert = 'محصول شما با موفقیت ویرایش شد';
-      setTimeout(() => { this.alert = '' }, 2200);
+
+      this.alertObj.newAlert('محصول شما با موفقیت ویرایش شد', 2200);
     }
     else {
-      this.alert = 'محصول مورد نظر یافت نشد لطفا شناسه را وارد کنید';
-      setTimeout(() => { this.alert = '' }, 2200);
+      this.alertObj.newAlert('محصول مورد نظر یافت نشد لطفا شناسه را وارد کنید', 2200, false, true);
     }
     this.editProductVisible = false;
   }

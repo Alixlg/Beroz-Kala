@@ -5,11 +5,18 @@ import { AlertBody } from '../+models/alertBody';
   providedIn: 'root'
 })
 export class AlertService {
-  alertBodyList: AlertBody[] = [];
+  private alertBodyList: AlertBody[] = [];
 
-  deleteAlert(alertBody: AlertBody, timeToDelete: number) {
+  newAlert(alertContent: string, timeToDelete: number, isWarning = false, isError = false, isSpecial = false) {
+    let alert = new AlertBody(alertContent, isWarning, isError, isSpecial);
+
+    this.alertBodyList.push(alert);
     setTimeout(() => {
-      this.alertBodyList = this.alertBodyList.filter(x => alertBody != x);
+      this.alertBodyList = this.alertBodyList.filter(x => alert != x);
     }, timeToDelete);
+  }
+
+  getAlerts() {
+    return this.alertBodyList;
   }
 }

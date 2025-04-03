@@ -6,7 +6,8 @@ export class Product {
   price: string = '';
   pic: string = '';
   count: number = 1;
-  isDisable = false;
+  isAddDisable = false;
+  isRemoveDisable = false;
 
   constructor(brand: string, title: string, price: string, pic: string) {
     this.id = Product._id++;

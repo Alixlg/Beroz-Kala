@@ -29,12 +29,11 @@ export class ProductsComponent {
     if (this.basketProductsObj.basket.every(p => p.id != $event.id)) {
       this.basketProductsObj.basket.push($event);
 
-      $event.isDisable = true;
-      let alert = new AlertBody(`محصول ${$event.title} ${$event.brand} با موفقیت به سبد اضافه شد`);
-      this.alertSystemObj.alertBodyList.push(alert);
+      this.alertSystemObj.newAlert(`محصول ${$event.title} ${$event.brand} با موفقیت به سبد اضافه شد`, 2000);
+
+      $event.isAddDisable = true;
       setTimeout(() => {
-        this.alertSystemObj.alertBodyList = this.alertSystemObj.alertBodyList.filter(x => alert != x);
-        $event.isDisable = false;
+        $event.isAddDisable = false;
       }, 2000);
     }
     else {
@@ -44,12 +43,11 @@ export class ProductsComponent {
         product.count += 1;
         this.basketProductsObj.basket.push(product);
 
-        $event.isDisable = true;
-        let alert = new AlertBody(`محصول ${$event.title} ${$event.brand} با موفقیت به سبد اضافه شد`);
-        this.alertSystemObj.alertBodyList.push(alert);
+        this.alertSystemObj.newAlert(`محصول ${$event.title} ${$event.brand} با موفقیت به سبد اضافه شد`, 2000);
+
+        $event.isAddDisable = true;
         setTimeout(() => {
-          this.alertSystemObj.alertBodyList = this.alertSystemObj.alertBodyList.filter(x => alert != x);
-          $event.isDisable = false;
+          $event.isAddDisable = false;
         }, 2000);
       }
     }

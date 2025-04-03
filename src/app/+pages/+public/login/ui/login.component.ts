@@ -1,6 +1,7 @@
 import { Component, inject, OnDestroy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
+import { AlertService } from '../../../../+services/alert.service';
 
 @Component({
   selector: 'app-login',
@@ -10,19 +11,20 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class LoginComponent {
   router = inject(Router);
+  alertObj = inject(AlertService);
 
   isDarkMode: boolean = true;
   isLogin: boolean = false;
 
   username: string = "";
   password: string = "";
-  error: string = "";
 
   login() {
     if (this.username.length >= 2 && this.password.length >= 8) {
       if (this.username == "admin" && this.password == "12345678") {
         this.isLogin = true;
-        this.error = "شما با موفقیت وارد شدید در حال انتفال . . ";
+        this.alertObj.newAlert("شما با موفقیت وارد شدید در حال انتقال . . ", 2000);
+        this.isDarkMode =! this.isDarkMode;
 
         setTimeout(() => {
           this.router.navigateByUrl('/pr/admin-panel');
@@ -30,7 +32,8 @@ export class LoginComponent {
       }
       else if (this.username == "user" && this.password == "12345678") {
         this.isLogin = true;
-        this.error = "شما با موفقیت وارد شدید در حال انتفال . . ";
+        this.alertObj.newAlert("شما با موفقیت وارد شدید در حال انتقال . . ", 2000);
+        this.isDarkMode =! this.isDarkMode;
 
         setTimeout(() => {
           this.router.navigateByUrl('/pr/user-panel');
@@ -38,14 +41,12 @@ export class LoginComponent {
       }
       else {
         this.isLogin = false;
-        this.error = "رمز عبور یا نام کاربری اشتباه است";
-        setTimeout(() => { this.error = '' }, 2000);
+        this.alertObj.newAlert("رمز عبور یا نام کاربری اشتباه است", 2000, false, true);
       }
     }
     else {
       this.isLogin = false;
-      this.error = "لطفا مقادیر خواسته شده را به درستی وارد کنید";
-      setTimeout(() => { this.error = '' }, 2000);
+      this.alertObj.newAlert("لطفا مقادیر خواسته شده را به درستی وارد کنید", 2000, false, true);
     }
   }
 }
