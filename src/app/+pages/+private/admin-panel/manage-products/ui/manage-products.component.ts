@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Product } from '../../../../../+models/product';
+import { ProductBody } from '../../../../../+models/product';
 import { BasketService } from '../../../../../+services/basket.service';
 import { ProductService } from '../../../../../+services/product.service';
 import { DecimalPipe } from '@angular/common';
@@ -27,7 +27,7 @@ export class ManageProductsComponent {
   productPrice: string = '';
   productPic: string = '';
 
-  searchedProduct?: Product;
+  searchedProduct?: ProductBody;
   searchId: string = '';
 
   addProduct() {
@@ -44,7 +44,7 @@ export class ManageProductsComponent {
     }
 
     this.productsObj.products.push(
-      new Product(this.productBrand, this.productTitle, this.productPrice, this.productPic)
+      new ProductBody(this.productBrand, this.productTitle, this.productPrice, this.productPic)
     );
     this.addProductVisible = !this.addProductVisible;
 
@@ -56,7 +56,7 @@ export class ManageProductsComponent {
     this.alertObj.newAlert('محصول شما با موفقیت ثبت شد', 2200);
   }
 
-  delProduct(product: Product) {
+  delProduct(product: ProductBody) {
     this.productsObj.products = this.productsObj.products.filter(p => p.id != product.id);
     this.basketObj.basket = this.basketObj.basket.filter(p => p.id != product.id);
     this.alertObj.newAlert('محصول شما با موفقیت حذف شد', 2200);
@@ -126,6 +126,7 @@ export class ManageProductsComponent {
     else {
       this.alertObj.newAlert('محصول مورد نظر یافت نشد لطفا شناسه را وارد کنید', 2200, false, true);
     }
+
     this.editProductVisible = false;
   }
 }

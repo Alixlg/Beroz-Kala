@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Product } from '../../../../+models/product';
+import { ProductBody } from '../../../../+models/product';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -9,12 +9,12 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './search.component.scss'
 })
 export class SearchComponent {
-  @Input() products: Product[] = [];
-  @Output() onDone = new EventEmitter<Product[]>;
+  @Input() products: ProductBody[] = [];
+  @Output() onDone = new EventEmitter<ProductBody[]>;
   @Output() onVisible = new EventEmitter<boolean>;
 
   searchValue = '';
-  searchedProducts: Product[] = [];
+  searchedProducts: ProductBody[] = [];
 
   search($event: KeyboardEvent) {
     if ($event.key == 'Enter' && this.searchValue != '') {

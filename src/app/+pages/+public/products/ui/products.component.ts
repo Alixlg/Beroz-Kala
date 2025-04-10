@@ -1,5 +1,5 @@
 import { Component, EventEmitter, inject, Output } from '@angular/core';
-import { Product } from '../../../../+models/product';
+import { ProductBody } from '../../../../+models/product';
 import { BasketService } from '../../../../+services/basket.service';
 import { ProductService } from '../../../../+services/product.service';
 import { ProductComponent } from '../../product/ui/product.component';
@@ -19,13 +19,13 @@ export class ProductsComponent {
   productsObj = inject(ProductService);
   basketProductsObj = inject(BasketService);
 
-  searchedProducts: Product[] = [];
+  searchedProducts: ProductBody[] = [];
   isSearchBoxEmpty = true;
 
   sortMenuVisible = false;
   productsFiltered = '';
 
-  buy($event: Product) {
+  buy($event: ProductBody) {
     if (this.basketProductsObj.basket.every(p => p.id != $event.id)) {
       this.basketProductsObj.basket.push($event);
 
@@ -53,7 +53,7 @@ export class ProductsComponent {
     }
   }
 
-  search($event: Product[]) {
+  search($event: ProductBody[]) {
     this.searchedProducts = $event;
 
     if (this.isSearchBoxEmpty) {

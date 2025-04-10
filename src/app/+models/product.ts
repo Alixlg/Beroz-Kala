@@ -1,16 +1,18 @@
-export class Product {
+import { Product } from "../+pages/+public/product/models/product";
+
+export class ProductBody implements Product {
   private static _id = 1001;
-  id: number = 1001;
-  brand: string = '';
-  title: string = '';
-  price: string = '';
-  pic: string = '';
-  count: number = 1;
+  id = 1001;
+  brand = '';
+  title = '';
+  price = '';
+  pic = '';
+  count = 1;
   isAddDisable = false;
   isRemoveDisable = false;
 
   constructor(brand: string, title: string, price: string, pic: string) {
-    this.id = Product._id++;
+    this.id = ProductBody._id++;
     this.brand = brand;
     this.title = title;
     this.price = price;

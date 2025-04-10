@@ -34,14 +34,16 @@
         <section>
 
           <label for="username">نام کاربری</label>
-          <input [(ngModel)]="username" name="username" type="text" placeholder="نام کاربری خود را وارد کنید">
+          <input [(ngModel)]="registerModel.username" name="username" type="text"
+            placeholder="نام کاربری خود را وارد کنید">
 
         </section>
 
         <section>
 
           <label for="password">کلمه عبور</label>
-          <input [(ngModel)]="password" name="password" type="password" placeholder="رمز عبور خود را وارد کنید">
+          <input [(ngModel)]="registerModel.password" name="password" type="password"
+            placeholder="رمز عبور خود را وارد کنید">
 
         </section>
 
@@ -50,7 +52,8 @@
         <section>
 
           <label for="email">ایمیل یا شماره موبایل</label>
-          <input [(ngModel)]="email" name="email" type="email" placeholder="ایمیل یا شماره موبایل خود را وارد کنید">
+          <input [(ngModel)]="emailorPhone" name="email" type="email"
+            placeholder="ایمیل یا شماره موبایل خود را وارد کنید">
 
         </section>
 
@@ -58,7 +61,8 @@
 
         <section>
 
-          <button (click)="singUp()" [disabled]="username.length < 2||password.length < 8 || email.length < 2">ثبت
+          <button (click)="singUp()"
+            [disabled]="registerModel.username.length < 2||registerModel.password.length < 8 || emailorPhone.length < 2">ثبت
             نام</button>
 
         </section>

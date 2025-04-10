@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { AlertService } from '../../../../+services/alert.service';
+import { Register } from '../models/register';
 
 @Component({
   selector: 'app-register',
@@ -13,34 +14,31 @@ export class RegisterComponent {
   router = inject(Router);
   alertObj = inject(AlertService);
 
-  isDarkMode: boolean = true;
-  isLogin: boolean = false;
+  registerModel: Register = { username: '', password: '', email: '', phone: '' };
+  emailorPhone = '';
 
-  username: string = "";
-  password: string = "";
-  email: string = "";
+  isDarkMode: boolean = true;
 
   singUp() {
-    if (this.email.includes('@gmail.com') || this.email.includes('gmail@.com')) {
-      this.isLogin = true;
+    if (this.emailorPhone.includes('@gmail.com') || this.emailorPhone.includes('gmail@.com')) {
       this.alertObj.newAlert("شما با موفقیت ثبت نام کردید ! در حال انتقال . . ", 2000, false, false, true);
       this.isDarkMode = !this.isDarkMode;
+      this.registerModel.email = this.emailorPhone;
 
       setTimeout(() => {
         this.router.navigateByUrl('/pr/user-panel');
       }, 1500);
     }
-    else if (Number(this.email) && this.email.includes('09')) {
-      this.isLogin = true;
+    else if (Number(this.emailorPhone) && this.emailorPhone.includes('09')) {
       this.alertObj.newAlert("شما با موفقیت ثبت نام کردید ! در حال انتقال . . ", 2000, false, false, true);
       this.isDarkMode = !this.isDarkMode;
+      this.registerModel.phone = this.emailorPhone;
 
       setTimeout(() => {
         this.router.navigateByUrl('/pr/user-panel');
       }, 1500);
     }
     else {
-      this.isLogin = false;
       this.alertObj.newAlert("لطفا مقادیر خواسته شده را به درستی وارد کنید", 2000, false, true);
     }
   }

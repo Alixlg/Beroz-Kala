@@ -1,6 +1,6 @@
 import { DecimalPipe } from '@angular/common';
 import { Component, EventEmitter, inject, Input, OnChanges, OnInit, Output } from '@angular/core';
-import { Product } from '../../../../+models/product';
+import { ProductBody } from '../../../../+models/product';
 import { AlertService } from '../../../../+services/alert.service';
 
 @Component({
@@ -10,9 +10,9 @@ import { AlertService } from '../../../../+services/alert.service';
   styleUrl: './product.component.scss'
 })
 export class ProductComponent {
-  @Input() product!: Product;
-  @Output() onBuy = new EventEmitter<Product>;
-  @Output() onRemove = new EventEmitter<Product>;
+  @Input() product!: ProductBody;
+  @Output() onBuy = new EventEmitter<ProductBody>;
+  @Output() onRemove = new EventEmitter<ProductBody>;
   @Input() isBasket: boolean = false;
   @Input() isAddDisable = false;
   @Input() isRemoveDisable = false;

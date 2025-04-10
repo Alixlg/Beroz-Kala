@@ -1,5 +1,5 @@
 import { Component, EventEmitter, inject, Input, OnInit, Output } from '@angular/core';
-import { Product } from '../../../../+models/product';
+import { ProductBody } from '../../../../+models/product';
 import { BasketService } from '../../../../+services/basket.service';
 import { ProductComponent } from '../../product/ui/product.component';
 import { AlertService } from '../../../../+services/alert.service';
@@ -15,7 +15,7 @@ export class BasketComponent implements OnInit {
   @Input() basketProductsObj = inject(BasketService);
   alertSystemObj = inject(AlertService);
 
-  remove($event: Product) {
+  remove($event: ProductBody) {
     if ($event.count == 1) {
       this.basketProductsObj.basket = this.basketProductsObj.basket.filter(p => p.id != $event.id);
 

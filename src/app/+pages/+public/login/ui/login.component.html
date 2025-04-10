@@ -27,29 +27,31 @@
 
   <main>
     <section class="loginForm">
-      <form action="">
+      <form (ngSubmit)="login()">
         <header>ورود</header>
 
         <section>
 
           <label for="username">نام کاربری</label>
-          <input [(ngModel)]="username" name="username" type="text" placeholder="نام کاربری خود را وارد کنید">
+          <input [(ngModel)]="loginModel.username" name="username" type="text"
+            placeholder="نام کاربری خود را وارد کنید">
 
         </section>
 
         <section>
 
           <label for="password">رمز عبور</label>
-          <input [(ngModel)]="password" name="password" type="password" placeholder="رمز عبور خود را وارد کنید">
+          <input [(ngModel)]="loginModel.password" name="password" type="password"
+            placeholder="رمز عبور خود را وارد کنید">
 
         </section>
 
         <a routerLink="/register">حساب ندارید؟ ثبت نام کنید</a>
 
-        @if(username.length >= 2){
+        @if(loginModel.username.length >= 2){
         <section>
 
-          <button (click)="login()" [disabled]="password.length < 8">ورود</button>
+          <button [disabled]="loginModel.password.length < 8">ورود</button>
 
         </section>
         }

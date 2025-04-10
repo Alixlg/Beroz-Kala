@@ -1,4 +1,6 @@
-export class AlertBody {
+import { Alert } from "../+pages/+public/alert-system/models/alert";
+
+export class AlertBody implements Alert {
   alertContent = '';
   isSuccess = true;
   isWarning = false;
