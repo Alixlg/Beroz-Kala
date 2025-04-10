@@ -28,7 +28,7 @@
   <main>
 
     <section class="registerForm">
-      <form action="">
+      <form (ngSubmit)="singUp()">
         <header>ثبت نام</header>
 
         <section>
@@ -61,7 +61,7 @@
 
         <section>
 
-          <button (click)="singUp()"
+          <button
             [disabled]="registerModel.username.length < 2||registerModel.password.length < 8 || emailorPhone.length < 2">ثبت
             نام</button>
 
